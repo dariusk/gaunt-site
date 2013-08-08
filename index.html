@@ -10,17 +10,31 @@
     <h2>A beautiful, minimialist, versatile templating markup language.</h2>
     <div id="content">
       <p>The core idea of <strong>Gaunt</strong> is that it maximizes the beauty of your markup.</p>
-      <p>Here is an example Gauntfile:</p>
+      <p>Here is an example of Gaunt markup:</p>
       <pre>
         <code>
 	 		 				  		 	 	  	  			  	  			  	    		 						   	   	  	    	   		 		  	  			  		 				 				 
         </code>
       </pre>
-      <p>As you can see, the file is a mix of tabs and spaces, each tab representing a binary <strong>0</strong> and each space representing a binary <strong>1</strong>. The zeroes and ones get rendered to utf-8 encoded characters, and voilà: your template is rendered. (This particular Gauntfile simply renders out to "Hello world!")</p>
+      <p>As you can see, the markup is a mix of tabs and spaces, each tab representing a binary <strong>0</strong> and each space representing a binary <strong>1</strong>. The zeroes and ones get rendered to utf-8 encoded characters, and voilà: your template is rendered. (This particular markup simply renders out to "Hello world!")</p>
       <blockquote>
         <p><strong>Tabs</strong> are <strong>0s</strong></p>
         <p><strong>Spaces</strong> are <strong>1s</strong></p>
       </blockquote>
+      <p>Install with <a href="https://npmjs.org/package/gaunt-render">npm</a>:</p>
+      <pre>
+        <code>
+        $ npm install gaunt-render</code>
+      </pre>
+      <p>Usage couldn't be easier:</p>
+      <pre>
+        <code>
+        var gaunt = require('gaunt');
+        var renderedOutput = gaunt( '	   	 		'
+                                  + '	  		 	 '
+                                  + '	   		  '
+                                  + '	   	 		'); // "test"</code>
+      </pre>
       <p>You only have to remember two characters to use Gaunt. Its <strong>simplicity</strong> is unparalleled.</p>
       <p>You can render any utf-8 string with Gaunt. Its <strong>versatility</strong> means you can break the bonds of HTML and do whatever you need.</p>
       <p>Reading a Gauntfile is like looking at a Suprematist composition by Malevich, or listening to John Cage's <em>4'33"</em>. Its <strong>beauty</strong> is transcendent.</p>
