@@ -1,0 +1,22 @@
+body {
+  margin: 30px;
+  color: rgba(0,0,0,0.5);
+  font-family: sans-serif;
+  font-weight: 100;
+  max-width: 700px;
+}
+h1 {
+  color: rgba(0,0,0,0.5);
+  font-weight: 1000;
+}
+h2 {
+  color: rgba(0,0,0,0.5);
+  font-weight: 100;
+}
+a {
+  color: rgba(0,0,255,0.45);
+}
+pre {
+  background: #e8e8e8;
+  width: 500px;
+}
